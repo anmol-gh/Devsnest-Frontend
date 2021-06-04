@@ -1,0 +1,17 @@
+#heading{
+    margin-top: 0px;
+    text-align: center;
+}
+
+#data{
+    margin-left: 100px;
+    border: 1px solid black;
+    margin-right:100px;
+    padding-left:2px;
+}
+
+.lineSpace{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
