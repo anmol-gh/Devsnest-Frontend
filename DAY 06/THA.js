@@ -1,10 +1,5 @@
+//Solution to Question 1
 function isAnArray(input) {
-  // console.log(input)
-
-  // if (typeof(input)=='object'){
-  //     return true;
-  // }
-  // return false;
   return Array.isArray(input);
 }
 
@@ -12,10 +7,16 @@ console.log(isAnArray("w3resource"));
 console.log(isAnArray([1, 2, [4, 0]]));
 console.log(isAnArray({ 2: "23" }));
 
+//Solution to Question 2
+
 function arrayClone(input) {
+  /*Method 1*/
+
   // let copyArray;
   // copyArray=input;
   // return copyArray;
+
+  /*Method 2*/
   let copy = [];
   for (i of input) {
     copy.push(i);
@@ -24,6 +25,8 @@ function arrayClone(input) {
 }
 console.log(arrayClone([1, 2, 4, 0]));
 console.log(arrayClone([1, 2, [4, 0]]));
+
+//Solution to Question 3
 
 function nthElement(input, n = 0) {
   if (n == 0) {
@@ -48,16 +51,18 @@ console.log(nthElement([7, 9, 0, -2], 3));
 console.log(nthElement([7, 9, 0, -2], 6));
 console.log(nthElement([7, 9, 0, -2], -3));
 
-const JJoin = (input) => {
+//Solution to Question 4
+
+const Joiner = (input) => {
   let newString = "";
-  for (let i = 0; input.length - 2; i++) {
+  for (let i = 0; input.length - 1; i++) {
     newString += input[i] + ",";
   }
   newString += input[input.length - 1];
   return newString;
 };
 
-console.log(JJoin(["Red", "Green", "White", "Black"]));
+console.log(Joiner(["Red", "Green", "White", "Black"]));
 
 function join(input) {
   //Alternatively input.join() could have been used
@@ -70,6 +75,8 @@ function join(input) {
 }
 
 console.log(join(["Red", "Green", "White", "Black"]));
+
+//Solution to Question 5
 
 function frequent(input) {
   let maximum = 0;
