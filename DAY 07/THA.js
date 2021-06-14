@@ -68,6 +68,8 @@ display(library);
 
 function volume(height, radius) {
   let volumeOfCylinder = 3.14 * radius * radius * height;
+  //alternatively
+  //return volumeOfCylinder.toFixed(4)
   try {
     let decimal = volumeOfCylinder.toString().split(".")[1].slice(0, 4);
     return volumeOfCylinder.toString().split(".")[0] + "." + decimal;
@@ -89,7 +91,7 @@ let sortArray = (a, b) => {
   /* To compare by LibraryID 
   return a-b */
   /* To compare by Author
-  return a.title(localeCompare(b.title));
+  return a.author(localeCompare(b.author));
   */
 };
 

@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(2,0,36);
+/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 32%, rgba(0,212,255,1) 79%); */
+color:rgb(247, 232, 31);
+}
+
+.header {
+  padding-top: 1.5rem;
+  font-size: 2.2rem;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  color: rgba(167, 247, 9, 0.967);
+  /* background-color: rgb(23, 88, 252); */
+}
+
+.heading {
+  font-size: 1.5rem;
+}
+
+.content {
+  font-size: 1.1rem;
+}
