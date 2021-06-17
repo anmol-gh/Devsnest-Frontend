@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+
+}
+
+.white{
+    border:1px solid black;
+    width:20px;
+    height:20px;
+}
+
+.container{
+    height:400px;
+    width:400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.red{
+    border:1px solid black;
+    width:20px;
+    height:20px;
+    color:red;
+}
