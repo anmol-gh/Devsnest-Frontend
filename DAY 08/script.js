@@ -1,43 +1,44 @@
 
-// //   if (i%20==0){
-// // const breakME=document.createElement("br")
-// // document.append(breakME)
-// // document.body.insertBefore('body',breakME)
-//   }
-// }
-
-// function giveMeABreak(){
-//     const breakMe = document.createElement('br')
-//     document.body.insert
-// }
-
-
+function loop(){
 for (let i = 0; i < 400; i++) {
     addElement();
   }
+}
 
 function addElement() {
   const newButton = document.createElement("button");
 
-  newButton.className = "white";
-  newButton.id="white";
+  newButton.className = "red";
+  newButton.id="buttons";
+  newButton.addEventListener("click",clicked)
 
   const currentDiv = document.getElementById("container");
-   newButton.onclick=function clicked(e){
-       if (e.classList=="white"){
-           newButton.classList.remove("white");
-           newButton.className="red";
-           console.log("whittt")
-        }
-        else{
-            e.className="white";
-        }
-        console.log(newButton.classList)
-    };
   currentDiv.appendChild(newButton);
   }
 
-//   function clicked(e){
-//     console.log('Button was clicked')
-    
-//   }
+  function clicked(e){
+    if(
+    (e.target.className)=="red") {
+      e.target.className="white";
+    }
+    else{
+      e.target.className="red";
+    }
+   
+  }
+
+function reset(){
+  let whites=document.getElementsByClassName("white");
+  console.log(whites);
+  // whites.forEach((x)=>{
+  //   console.log(x)
+  // // xyz.className="red";
+  // }
+ // )
+
+  for (let i=0;i<whites.length;i++){
+    console.log(whites[i])
+    whites[i].className="red";
+  }
+}
+loop();
