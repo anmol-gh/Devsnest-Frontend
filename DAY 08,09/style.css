@@ -14,11 +14,12 @@ body{
 
 }
 
-.white{
+.red{
     border:1px solid black;
-    width:20px;
-    height:20px;
+    width:1.2rem;
+    height:1.2rem;
     cursor: pointer;
+    background-color: red;
 }
 
 .container{
@@ -28,10 +29,17 @@ body{
     flex-wrap: wrap;
 }
 
-.red{
+.green{
     border:1px solid black;
-    width:20px;
-    height:20px;
-    background-color: red;
+    width:1.2rem;
+    height:1.2rem;
+    background-color: rgb(72, 255, 0);
     cursor: pointer;
+}
+
+#reset{
+    background-color: rgb(163, 248, 142);
+    font-size:1.1rem;
+    display: flex;
+    flex-direction: row ;
 }
