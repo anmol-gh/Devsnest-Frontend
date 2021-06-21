@@ -19,7 +19,7 @@ function addElement() {
 function clicked(e) {
   if (e.target.className == "green") {
     e.target.className = "red";
-    available=available-1;
+    available = available - 1;
     booked = booked + 1;
   } else {
     e.target.className = "green";
@@ -27,21 +27,27 @@ function clicked(e) {
   }
   document.getElementById("booked").textContent =
     "Tickets booked " + booked + " ";
-  document.getElementById("open").textContent = "Available Tickets " + available;
+  document.getElementById("open").textContent =
+    "Available Tickets " + available;
 }
 
 function reset() {
-  let reds = document.getElementsByClassName("red");
-  console.log(reds);
-  for (let i of reds) {
-    i.className = "green";
-    reset();
+  let reds = document.querySelectorAll(".red");
+  // console.log(reds);
+  // console.log(reds.length);
+  for (let i = 0; i < reds.length; i++) {
+    reds[i].className = "green";
+    // console.log([i]);
   }
-  available=400;
-  booked=0;
+  // for (let i of bleh) {
+  //   console.log(i)
+  //   i.className = "green";
+  //  alternate let reds = document.getElementsByClassName("red");
+  // reset();
+  available = 400;
+  booked = 0;
   document.getElementById("booked").textContent =
-  "Tickets booked " + booked + " ";
-document.getElementById("open").textContent = "Available Tickets " + available;
+    "Tickets booked " + booked + " ";
+  document.getElementById("open").textContent = "Available Tickets " + available;
 }
-
 loop();
