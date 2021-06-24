@@ -8,7 +8,7 @@ for (let i=0;i<16;i++){
     card.addEventListener('click',checkFlip);
     card.className=items[i];
     card.classList.add("basic");
-    card.innerText=items[i];
+    card.innerText=items[i].toUpperCase();
     // card.classList.add('flip');
     container.appendChild(card);
 }

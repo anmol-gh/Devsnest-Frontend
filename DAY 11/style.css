@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cadetblue;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  background-color: cadetblue;
+  height: 50%;
+  width: 50%;
+  row-gap: 10%;
+  border-radius: 5px;
+}
+
+.question {
+  background-color: rgb(46, 248, 255);
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.option {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.correct{
+    background-color: chartreuse;
+}
+
+.wrong{
+    background-color: crimson;
+}
