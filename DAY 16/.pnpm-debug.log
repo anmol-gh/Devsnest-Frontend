@@ -1,0 +1,14 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND",
+    "err": {
+      "name": "Error",
+      "message": "No package.json (or package.yaml, or package.json5) was found in \"G:\\Devsnest Projects\\Front-End\\DAY 16\".",
+      "code": "ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND",
+      "stack": "Error: No package.json (or package.yaml, or package.json5) was found in \"G:\\Devsnest Projects\\Front-End\\DAY 16\".\n    at readProjectManifest (C:\\Users\\Supriya Ghai\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:39698:13)\n    at async Object.readProjectManifestOnly (C:\\Users\\Supriya Ghai\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:39702:28)\n    at async Object.readProjectManifestOnly (C:\\Users\\Supriya Ghai\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:39921:24)\n    at async Object.handler (C:\\Users\\Supriya Ghai\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:120542:24)\n    at async Timeout._onTimeout (C:\\Users\\Supriya Ghai\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:124590:24)"
+    }
+  }
+}
